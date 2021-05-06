@@ -104,8 +104,8 @@ table {
 
 .actual-input{
   width: 125px;
-  border-color: black;
-  background-color: #b6b8ba;
+  border-color:#e5e8e2;
+  background-color: #e5e8e2;
 }
 
 .actual-input-false{
@@ -121,8 +121,18 @@ table {
 
 .submit-button{
   margin-left: 33%;
-  background-color: #b6b8ba;
-  border-width: thick;
+  background-color: #e8e5e3;
+  border-width: thin;
+  border-color: #c01823;
+  font-family: apertura, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.submit-button:hover{
+  background-color: #c01823;
+  color: #c01823;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .whatevs{

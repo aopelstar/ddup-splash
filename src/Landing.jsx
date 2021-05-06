@@ -84,7 +84,7 @@ export default class Landing extends Component {
                   <div className={this.state.validation?"radio-text":"radio-text radio-text-false"}>Hell ya, send me emails regarding Death Do Us Parties</div>
                 </div>
                 <button className="submit-button" onClick={ () => this.submit()}> 
-                  Submit
+                  SUBMIT
                 </button>
 
             </div>

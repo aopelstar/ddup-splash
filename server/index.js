@@ -2,6 +2,7 @@ const express = require ('express');
 const bodyParser = require ('body-parser');
 const cors = require ('cors');
 const massive = require ('massive');
+const controller = require ('./controller/postemail')
 require('dotenv').config()
 
 
@@ -12,20 +13,10 @@ app.use( cors());
 app.use( express.static( `${__dirname}/../build` ) );
 
 
-
 massive(process.env.CONNECTION_STRING).then(db => {
-    app.set('db', db)
-    }).catch(function(err) {
-        console.log('error: ', err);
-    });
-app.post('/api/getemail', (req, res, nest) =>{
-    const db = req.app.get('db');
-    const { email, name } = req.body
-
-    db.email([ email, name]).then(response => {
-            res.status(200).send(response)
-        })
+    app.set('db', db);
 })
+app.post('/api/getemail', controller.email)
 
 
 const port = process.env.SERVER_PORT || 5432

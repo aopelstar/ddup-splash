@@ -1,33 +1,29 @@
-const express = require ('express');
-const bodyParser = require ('body-parser');
-const cors = require ('cors');
-const massive = require ('massive');
-const controller = require ('./controller/postemail')
 require('dotenv').config()
-const pgp = require( 'pg-promise')({});
+const express = require ('express');
+const massive = require ('massive');
+const controller = require ('./controller/postemail');
+
 
 
 const app = express();
-app.use( bodyParser.json())
-app.use( cors());
+massive({
+    connectionString: process.env.CONNECTION_STRING,
+    ssl: {
+        rejectUnauthorized: false
+    }
+}).then(db => {
+    app.set('db', db)
+    console.log('connected to db')
+}).catch(err=>console.log(`database error: ${err}`))
+
+app.use( express.json())
 
 app.use( express.static( `${__dirname}/../build` ) );
 
 
-const db = pgp(process.env.CONNECTION_STRING);
-app.post('/api/getemail', (req, res) =>{
-    console.log(req.body);
-    
-    const { name, email } = req.body
-    db.one( 'INSERT INTO email_db(email, email_name) VALUES($1 $2)', [email, name])
-    .then(response => {
-        res.status(200).send(response)
-    }).catch( (error) => {
-        console.log(error)
-        res.status(500).send(error);
-    })
-    
-})
+
+
+app.post('/api/getemail', controller.getemail)
 
 
 const port = process.env.SERVER_PORT || 5432

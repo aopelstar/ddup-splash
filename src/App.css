@@ -69,7 +69,7 @@ table {
 
 .splash-elements-wrapper{
   position: relative;
-  top: 205px;
+  top: 275px;
   z-index: 3;
   display: flex;
   flex-direction:column;
@@ -92,6 +92,7 @@ table {
   justify-content: space-between;
   width: 200px;
   margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .radio-container{
@@ -151,6 +152,13 @@ table {
   color: #c01823;
 }
 
+.worker-img{
+  position: relative;
+  height: 150px;
+  width: auto;
+  top: 25px;
+}
+
 @media(min-width: 750px){
 
 .death-image{
@@ -164,7 +172,7 @@ table {
 .splash-elements-wrapper{
  height: 400px;
  width: 500px;
- top: 290px;
+ top: 425px;
 
 }
 
@@ -206,6 +214,13 @@ table {
   font-size: 1.5vw;
 }
 
+.worker-img{
+  width: 500px;
+  height: auto;
+  top: 100px;
+  left: 15px;
+}
+
 
 }
 
@@ -224,7 +239,7 @@ table {
   
   .splash-elements-wrapper{
     margin-left: 29%;
-    top: 260px;
+    top: 300px;
     height: 330px;
   }
 
@@ -237,10 +252,59 @@ table {
     height: 45px;
     margin-left: 30%;
   }
+
+  .worker-img{
+    position: absolute;
+    top: 50px;
+    left: 475px;
+    width: 350px;
+    
+  }
+
+  .contruction-img{
+    position: relative;
+    top: -250px;
+    width: 325px;
+    left: 420px;
+  }
 }
 
-@media(min-width:1100px){
+@media(min-width:1550px){
+
+  .death-image{
+    height: auto;
+    width: 600px;
+  }
+
+  .text-container{
+    margin-left: 50px;
+    font-size: 1.5vw;
+  }
+
+  .name-container, .email-container{
+    margin-left: 50px;
+    width: 300px;
+  }
+
+  .radio-container {
+    width: 600px;
+    margin-left: 40px;
+    margin-right: 0;
+
+  }
+
+  .radio-text{
+    margin-bottom: 30px;
+  }
+
   .whatevs{
-    font-size: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .worker-img{
+    top: 50px;
+    left: 655px;
+    width: 500px;
+    
   }
 }

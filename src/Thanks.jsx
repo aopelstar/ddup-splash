@@ -8,8 +8,8 @@ export default class Thanks extends Component {
 
         return(
             <div className="splash-wrapper">
-          <img src = { banner } className="banner"/>
-          <img src ={ death } className="death-image"/>
+          <img src = { banner } className="banner" alt="dumb"/>
+          <img src ={ death } className="death-image" alt="dumb"/>
         
       </div>
         )

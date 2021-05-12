@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import death from './images/box.png';
 import banner from './images/banner.png';
+import worker from './images/construction.png';
 
 
 export default class Landing extends Component {
@@ -58,8 +59,8 @@ export default class Landing extends Component {
   render(){
     return(
       <div className="splash-wrapper">
-          <img src = { banner } className="banner"/>
-          <img src ={ death } className="death-image"/>
+          <img src = { banner } className="banner" alt="dumb"/>
+          <img src ={ death } className="death-image" alt="dumb"/>
         <div className="splash-elements-wrapper">
           <div className="text-container">
             <div className="name-container">
@@ -89,9 +90,10 @@ export default class Landing extends Component {
 
             </div>
           </div>
-
+            <div className="construction-img">
+              <img src={worker} className="worker-img" alt="dumb"/>
+            </div>
         </div>
-        
       </div>
     )
 }

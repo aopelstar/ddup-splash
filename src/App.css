@@ -308,3 +308,9 @@ table {
     
   }
 }
+
+@media(min-width:1300px){
+  .splash-elements-wrapper{
+    top: 275px;
+  }
+}

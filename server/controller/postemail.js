@@ -12,6 +12,17 @@ module.exports ={
                 console.log(error);
                 res.status(500).send(error)
             })
+        },
+
+        results: (req, res ) =>{
+            const db = req.app.get('db')
+
+            db.results().then( response =>{
+                res.status(200).send(response)
+            }).catch( (error) =>{
+                console.log(error);
+                res.status(500).send(error)
+            })
         }
 
      

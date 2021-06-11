@@ -24,6 +24,7 @@ app.use( express.static( `${__dirname}/../build` ) );
 
 
 app.post('/api/getemail', controller.getemail)
+app.get('/api/results', controller.results)
 
 
 const port = process.env.SERVER_PORT || 5432

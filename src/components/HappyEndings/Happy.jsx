@@ -14,7 +14,7 @@ export default class Happy extends Component {
 
     render(){
         return(
-            <div className="splash-wrapper">
+            <div className="happy-wrapper">
                 <img src = { banner } className="banner" alt="dumb"/>
                 <div className="murder-mystery-pages-header">
                     < img src = {happy} className="murder-mystery-pages-image" alt ="dumb"/>

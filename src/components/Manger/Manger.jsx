@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './manger.css';
 import banner from '../../images/banner.png';
 import manger from '../../images/manger.png';
-
+import bugle from '../../images/bugle.png';
 
 export default class Manger extends Component {
     constructor(){
@@ -15,7 +15,7 @@ export default class Manger extends Component {
 
     render(){
         return(
-            <div className="splash-wrapper">
+            <div className="manger-wrapper">
                 <img src = { banner } className="banner" alt="dumb"/>
                 <div className="murder-mystery-pages-header">
                     < img src = {manger} className="murder-mystery-pages-image" alt ="dumb"/>
@@ -26,10 +26,14 @@ export default class Manger extends Component {
                     business to take care of. With all the heated issues coming through town, Bethlehem 
                     is going to have a not-so-silent night.
                     </div>
-                    <iframe width="90%" height="auto" src="https://www.youtube.com/embed/Y3nXG1mf3xA" 
+                    <iframe  src="https://www.youtube.com/embed/Y3nXG1mf3xA" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
                     picture-in-picture" allowfullscreen></iframe>
+                        
+                    <img src = "https://res.cloudinary.com/http-www-deathdousparties-com/image/upload/v1640151336/character%20tables/MaM_Character_List-01_seti2n.png" className="character-desc-img" alt = "dumb"/>
+                    <img src = {bugle} className="character-desc-img" alt="dumb" />
+                        
                     <div className="murder-myster-pages-desc">
                         Having trouble with your costume?  Are you worried you're going to arrive at the party
                         and be the worst dressed there?  NBD, we've got you covered.  
@@ -39,75 +43,7 @@ export default class Manger extends Component {
                         </div>
 
                     </div>
-                    <table>
-                        <tr>
-                            <th>
-                                Character
-                            </th>
-                            <th>
-                                Description
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Enrique</td>
-                            <td>Enrique is a champion gladiator known for his brutal strength and even stronger charm.
-                                Although he lacks a bit in brains, he makes up for it in brawn
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                    </table>
+                    
                 </div>
             </div>
         )

@@ -1,0 +1,10 @@
+.manger-wrapper{
+
+  background-image: url('https://res.cloudinary.com/http-www-deathdousparties-com/image/upload/v1640149441/MM%20backgrounds/MAM-web-background_pscenx.png');
+  background-repeat: repeat-x;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  
+}

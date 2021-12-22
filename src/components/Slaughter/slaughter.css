@@ -1,0 +1,18 @@
+.slaughter-wrapper{
+    background-image: url('https://res.cloudinary.com/http-www-deathdousparties-com/image/upload/v1640149441/MM%20backgrounds/web-background-SS9_oz0bzv.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+}
+
+.slaughter-desc{
+    color: black;
+   font-weight: bold;
+   background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slaught-butt{
+    background: white;
+}

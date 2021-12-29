@@ -38,7 +38,7 @@ export default class Manger extends Component {
                         Having trouble with your costume?  Are you worried you're going to arrive at the party
                         and be the worst dressed there?  NBD, we've got you covered.  
                         <div className="murder-myster-link">
-                           <a href="https://www.pinterest.com/deathdousparties/murder-at-the-manger/nativity-costume-inspiration/"> 
+                           <a href="https://www.pinterest.com/deathdousparties/summer-slaughter-of-98/costume-inspiration/"> 
                            Click Here For Costume Ideas</a>
                         </div>
 

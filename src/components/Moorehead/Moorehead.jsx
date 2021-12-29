@@ -23,6 +23,8 @@ export default class Moorehead extends Component {
                     Located in the Colorado territory, Moorhead Mount is your typical old west town.  
                     You got your bar, your guns, your hangings, your booze, your injuns and don't 
                     worry, there are plenty of prostitutes to go around.
+                    <br/>
+                    <br/>
                     1864 looks to be a promising time for Moorhead Mount with the construction 
                     of the new clock tower.  Sheriff Gino Cents has decided to put together a 
                     party to celebrate the new clock and has invited some of the town's finest.

@@ -1,7 +1,7 @@
 .slaughter-wrapper{
     background-image: url('https://res.cloudinary.com/http-www-deathdousparties-com/image/upload/v1640149441/MM%20backgrounds/web-background-SS9_oz0bzv.png');
-    background-repeat: repeat-x;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: auto auto contain;
     min-height: 100vh;
     height: auto;
     width: 100vw;
@@ -16,3 +16,40 @@
 .slaught-butt{
     background: white;
 }
+
+.sb-hype-video{
+    font-size:3.5vh;
+    color: black;
+    font-weight: bold;
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+
+
+@media(min-width:550px){
+    .sb-hype-video{
+        font-size: 10vh;
+    }
+}
+
+@media(min-width:760px){
+    .sb-hype-video{
+        font-size: 8vh;
+    }
+}
+
+@media(min-width:760px) and (min-height:1000px){
+    .sb-hype-video{
+        font-size: 4.5vh;
+    }
+    
+}
+
+@media(min-width:1360px){
+    .sb-hype-video{
+        font-size: 5vh;
+    }
+}
+

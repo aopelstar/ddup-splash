@@ -45,8 +45,8 @@ table {
 .splash-wrapper{
   background-color: lightgray;
   background-image: url(/src/images/bg.png);
-  background-repeat: repeat-x;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: auto;
   min-height: 100vh;
   height: auto;
   width: 100%;
